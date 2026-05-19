@@ -1,0 +1,186 @@
+.hero {
+    margin-bottom: 40px;
+}
+.hero img {
+    border-radius: 20px;
+    box-shadow: 0 0px 15px;
+    transition: transform 0.3s ease;
+    float: left;
+    margin: 0 30px 0 0;
+}
+.hero img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0px 30px;
+}
+.hero-text {
+    color: var(--text);
+}
+.hero-text p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--text);
+}
+.hero-text .last-p {
+    font-style: italic;
+    font-weight: 600;
+    text-shadow: 0 0px 2px;
+}
+/* =================BIO================ */
+.bio-content {
+    margin-top: 30px;
+}
+.bio-content section {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--accent);
+}
+.bio-content section:last-of-type {
+    border-bottom: none;
+}
+.bio-content section img {
+    max-width: 300px;
+    height: auto;
+    box-shadow: 0 0px 15px;
+    margin: 10px 30px 10px 0px;
+    float: left;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+}
+.bio-content section img:hover {
+    box-shadow: 0 0px 30px;
+    transform: scale(1.08);
+}
+.bio-content section img.right {
+    float: right;
+    margin: 10px 0px 10px 30px;
+}
+main h1.intro {
+    margin-bottom: 30px;
+    color: var(--accent);
+    text-align: center;
+    background: var(--grad-title);
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px;
+    border-radius: 15px 50px 15px 50px;
+    box-shadow: 2px 3px 10px;
+    border: 2px solid;
+    text-shadow: 1px 1px 6px var(--black);
+}
+.bio-intro {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+.bio-intro img {
+    width: 500px;
+    box-shadow: 0 0px 15px;
+    border-radius: 30px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.bio-intro img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0px 30px;
+}
+.facts {
+    flex: 1;
+    background: linear-gradient(145deg, var(--black), var(--card), var(--card-3));
+    box-shadow: 0 0px 5px var(--accent);
+    border-radius: 6px;
+    padding: 30px;
+    font-family: 'Poppins', serif;
+    border: 1px solid var(--accent);
+}
+.facts h2 {
+    margin-bottom: 25px;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+.facts ul {
+    list-style: none;
+    padding: 0;
+}
+.facts li {
+    margin-bottom: 16px;
+    padding-left: 10px;
+    font-size: 1.04rem;
+    position: relative;
+}
+.facts li::before {
+    content: "999";
+    position: absolute;
+    left: 0;
+    line-height: 1;
+    top: -1em;
+    bottom: 0;
+    padding: 0 2px;
+}
+.facts strong {
+    font-weight: 700;
+    margin-right: 1px;
+}
+.quote {
+    margin: 50px 0 30px;
+    background: linear-gradient(145deg, var(--card-2), var(--card-3));
+    padding: 40px 70px;
+    border-radius: 70px 25px 70px 25px;
+    box-shadow: 3px 3px 15px var(--accent);
+    position: relative;
+    border: 1px solid var(--accent);
+    font-family: 'Poppins', serif;
+}
+.quote blockquote {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--accent);
+    text-align: center;
+    line-height: 1.3;
+    quotes: "“" "“";
+    margin: 0;
+    font-weight: 500;
+    text-shadow: 0 0px 2px;
+}
+.quote blockquote::before {
+    content: "„";
+    font-size: 1.2rem;
+    margin-right: 2px;
+    vertical-align: middle;
+}
+.quote blockquote::after {
+    content: "“";
+    font-size: 1.2rem;
+    margin-right: 2px;
+    vertical-align: middle;
+}
+.quote cite {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: 0 0px 2px;
+    color: var(--accent);
+}
+.bio-content h2 {
+    color: var(--accent);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--accent);
+    padding-left: 20px;
+}
+.bio-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text);
+    margin-bottom: 15px;
+}
+.bio-content section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
