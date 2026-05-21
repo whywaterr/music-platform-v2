@@ -1,0 +1,109 @@
+.music-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background: #1c1c1c;
+    border-top: 1px solid #2a2a2a;
+    z-index: 999;
+    padding: 0 30px;
+}
+.player-background {
+    padding: 0 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.track-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 150px;
+
+}
+.track-info img {
+    width: 45px;
+    height: 45px;
+    background: #222;
+    border-radius: 6px;
+}
+.track-title {
+    color: white;
+    font-size: 14px;
+    transition: .0s;
+    cursor: pointer;
+    font-family: 'Montserrat';
+}
+.track-artist {
+    color: #c2c2c2;
+    font-size: 12px;
+    transition: .0s;
+    cursor: pointer;
+    font-family: 'Montserrat';
+}
+.track-title:hover, .track-artist:hover {
+    color: #757575;
+}
+.player-controls {
+    display: flex;
+    gap: 20px;
+}
+.player-controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+.player-progress {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+   width: 500px;
+
+}
+.player-progress span {
+    color: white;
+    font-size: 17px;
+    font-family: 'Montserrat';
+}
+.player-progress input {
+    width: 100%;
+}
+.player-volume {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100px;
+}
+.player-volume button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.player-volume input {
+    width: 100%;
+}
+.player-extra-controls, .playlist-controls {
+    display: flex;
+    gap: 10px;
+}
+.playlist-controls button {
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+}
+.player-extra-controls button:hover, .playlist-controls button:hover {
+    color: white;
+}
+.player-extra-controls button {
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+}

@@ -1,0 +1,76 @@
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #080607;
+    padding: 0 30px;
+
+
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 75px;
+    max-width: 1400px;
+    gap: 30px;
+    padding: 0 85px;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+.header-logo img {
+    width: 60px;
+    height: 60px;
+}
+.nav-list {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    margin-left: 15px;
+    width: 300px;
+}
+.nav-list a {
+    color: #ededed;
+    font-size: 17px;
+    font-weight: 650;
+    text-decoration: none;
+    font-family: 'Montserrat';
+
+    transition: .3s;
+}
+.nav-list a:hover {
+    color: #fd1886;
+    text-shadow: 10px 10px #ff409c;
+}
+.search-form {
+    margin: 0 40px;
+}
+.search-form input {
+    width: 350px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    background: #1f1f1f;
+    color: white;
+    outline: none;
+
+}
+.user-menu {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+}
+.user-menu a {
+    text-decoration: none;
+    color: #ededed;
+    transition: .3s;
+    font-family: 'Montserrat';
+}
+.user-menu a:hover {
+    color: white;
+}
