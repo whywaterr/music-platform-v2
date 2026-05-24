@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Music</title>
+    <link rel="icon" type="image/png" href="../assets/images/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../assets/images/icons/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/images/icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="../assets/images/icons/site.webmanifest" />
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="header-nav">
+
+            <a href="../index.html" class="header-logo">
+
+                <img src="../assets/images/ui/mainicon.png" alt="21 Music logo" width="20px">
+
+            </a>
+
+            <ul class="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="foryou.html">For You</a></li>
+            </ul>
+
+            <form class="search-form">
+                <input type="text" placeholder="Search...">
+            </form>
+
+            <div class="user-menu">
+                <a href="profile.html">Profile</a>
+                <a href="settings.html">Settings</a>
+                <a href="notifications.html">Notifications</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="main-content">
+
+    </main>
+
+    <div class="music-player">
+        <div class="player-background">
+            <div class="track-info">
+                <img alt="Track cover">
+                <div>
+                    <p class="track-title">Track Name</p>
+                    <p class="track-artist">Artist</p>
+                </div>
+            </div>
+
+            <div class="player-controls">
+                <button type="button">⏮</button>
+                <button type="button">▶</button>
+                <button type="button">⏭</button>
+            </div>
+
+            <div class="player-progress">
+                <span>1:24</span>
+                <input type="range" min="0" max="100" value="0">
+                <span>3:45</span>
+            </div>
+            <div class="player-volume">
+                <button type="button">🔈</button>
+                <input type="range" min="0" max="100" value="30">
+            </div>
+            <div class="player-extra-controls">
+                <button type="button">🔀</button>
+                <button type="button">🔁</button>
+                <button type="button">Queue</button>
+            </div>
+            <div class="playlist-controls">
+                <button type="button">➕</button>
+                <button type="button">More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,13 +1,13 @@
 @import url("./reset.css");
 @import url("./variables.css");
 @import url("./global.css");
-@import url("./layout.css");
 
 @import url("./layout/header.css");
 @import url("./layout/dropdown.css");
 @import url("./layout/buttons.css");
 @import url("./layout/player.css");
 @import url("./layout/modals.css");
+@import url("./layout/sidebar.css");
 
 @import url("./pages/home.css");
 @import url("./pages/artist.css");

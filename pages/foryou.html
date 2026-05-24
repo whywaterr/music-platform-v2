@@ -38,6 +38,7 @@
             <div class="user-menu">
                 <a href="profile.html">Profile</a>
                 <a href="settings.html">Settings</a>
+                <a href="notifications.html">Notifications</a>
             </div>
 
         </nav>
@@ -47,8 +48,41 @@
 
     </main>
 
-    <footer class="site-footer">
+    <div class="music-player">
+        <div class="player-background">
+            <div class="track-info">
+                <img alt="Track cover">
+                <div>
+                    <p class="track-title">Track Name</p>
+                    <p class="track-artist">Artist</p>
+                </div>
+            </div>
 
-    </footer>
+            <div class="player-controls">
+                <button type="button">⏮</button>
+                <button type="button">▶</button>
+                <button type="button">⏭</button>
+            </div>
+
+            <div class="player-progress">
+                <span>1:24</span>
+                <input type="range" min="0" max="100" value="0">
+                <span>3:45</span>
+            </div>
+            <div class="player-volume">
+                <button type="button">🔈</button>
+                <input type="range" min="0" max="100" value="30">
+            </div>
+            <div class="player-extra-controls">
+                <button type="button">🔀</button>
+                <button type="button">🔁</button>
+                <button type="button">Queue</button>
+            </div>
+            <div class="playlist-controls">
+                <button type="button">➕</button>
+                <button type="button">More</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,8 +1,35 @@
-main, body {
+html, body {
     background: #080607;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    color: white;
+}
+h2 {
+    color: #c2c2c2;
+}
+.main-section {
+    position: relative;
+}
 .main-content {
+    display: flex;
     padding-top: 95px;
-    padding: 40px;
-    padding-bottom: 75x;
+    padding-bottom: 75px;
+    padding-left: 110px;
+    padding-right: 110px;
+    min-height: calc(100vh - 150px);
+    gap: 10px;
+}
+.main-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+.page-content {
+    flex: 1;
+    background: #121212;
+    border-radius: 4px;
+    padding: 25px;
+    min-height: 1000px;
 }
