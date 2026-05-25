@@ -1,3 +1,4 @@
+import { isFavorite } from "../features/favorites/favorites.js";
 export function createTrackCard(track) {
     return `
         <div class="track-card" data-id="${track.id}">
@@ -13,7 +14,9 @@ export function createTrackCard(track) {
             </button>
 
             <button class="favorite-btn">
-                ♡
+
+                ${isFavorite(track.id) ? "♥" : "♡"}
+
             </button>
 
             <button class="lyrics-btn">

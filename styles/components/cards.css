@@ -1,0 +1,64 @@
+.tracks-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(220px, 1fr)
+    );
+    gap: 15px;
+}
+
+.track-card {
+    background: #121212;
+    border-radius: 12px;
+    padding: 15px;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.track-card:hover {
+    background: #1b1b1b;
+    transform: translateY(-2px);
+}
+
+.track-card.active {
+    border: 1px solid #fd1886;
+}
+
+.track-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.track-title {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.track-artist {
+    color: #999;
+    font-size: 14px;
+}
+
+.track-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.play-btn,
+.favorite-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+    transition: .2s;
+}
+
+.play-btn:hover,
+.favorite-btn:hover {
+    color: #fd1886;
+}

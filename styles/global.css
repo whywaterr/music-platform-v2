@@ -33,3 +33,9 @@ h2 {
     padding: 25px;
     min-height: 1000px;
 }
+.page-title {
+    color: white;
+    font-size: 28px;
+    font-family: 'Montserrat';
+    margin-bottom: 25px;
+}

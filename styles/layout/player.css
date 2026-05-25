@@ -34,6 +34,7 @@
     transition: .0s;
     cursor: pointer;
     font-family: 'Montserrat';
+    font-weight: 550;
 }
 .track-artist {
     color: #c2c2c2;
@@ -41,6 +42,7 @@
     transition: .0s;
     cursor: pointer;
     font-family: 'Montserrat';
+    font-weight: 500;
 }
 .track-title:hover, .track-artist:hover {
     color: #757575;
@@ -49,11 +51,28 @@
     display: flex;
     gap: 20px;
 }
-.player-controls button {
+.music-player button img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    pointer-events: none;
+
+}
+.player-controls button,
+.player-volume button,
+.player-extra-controls button,
+.playlist-controls button {
     background: none;
     border: none;
-    color: white;
-    font-size: 22px;
+    padding: 0;
+
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     cursor: pointer;
 }
 .player-progress {

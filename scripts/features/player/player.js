@@ -145,6 +145,11 @@ function playNext() {
 function playPrev() {
     if (!currentTrack) return;
 
+    if (audio.currentTime > 3) {
+        audio.currentTime = 0;
+        return;
+    }
+
     const currentIndex = tracks.findIndex(
         t => t.id === currentTrack.id
     );
