@@ -35,11 +35,7 @@
                 <input type="text" placeholder="Search...">
             </form>
 
-            <div class="user-menu">
-                <a href="#/profile" data-link>Profile</a>
-                <a href="#/settings" data-link>Settings</a>
-                <a href="#/notifications" data-link>Notifications</a>
-            </div>
+            <div class="user-menu"></div>
 
         </nav>
     </header>
@@ -67,17 +63,9 @@
             </div>
 
             <div class="player-controls">
-                <button class="prev-btn">
-                    <img src="/assets/images/svg-tools/prev.svg" alt="">
-                </button>
-
-                <button class="play-btn">
-                    <img src="/assets/images/svg-tools/play.svg" alt="">
-                </button>
-
-                <button class="next-btn">
-                    <img src="/assets/images/svg-tools/next.svg" alt="">
-                </button>
+                <button type="button">⏮</button>
+                <button type="button">▶</button>
+                <button type="button">⏭</button>
             </div>
 
             <div class="player-progress">
@@ -99,6 +87,13 @@
                 <button type="button">More</button>
             </div>
         </div>
+    </div>
+    <div class="modal-overlay hidden" id="authModal">
+        
+            <button class="modal-close">✕</button>
+
+            <div class="modal-content"></div>
+        
     </div>
     <script type="module" src="/scripts/main.js"></script>
 </body>

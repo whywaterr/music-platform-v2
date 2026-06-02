@@ -1,3 +1,5 @@
+import { notifyAuthChange } from "./authState.js";
+
 const USERS_KEY = "users";
 const CURRENT_USER_KEY = "currentUser";
 
@@ -49,6 +51,8 @@ export function register(username, password) {
         newUser.id
     );
 
+    notifyAuthChange();
+
     return {
         success: true
     };
@@ -77,9 +81,12 @@ export function login(username, password) {
         user.id
     );
 
+    notifyAuthChange();
+
     return {
         success: true
     };
+    
 }
 
 
@@ -89,6 +96,8 @@ export function logout() {
     localStorage.removeItem(
         CURRENT_USER_KEY
     );
+
+    notifyAuthChange();
 }
 
 

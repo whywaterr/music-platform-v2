@@ -3,12 +3,19 @@ import {
 } from "./features/favorites/favorites.js";
 
 import {
+    renderUserMenu
+} from "./components/userMenu.js";
+
+import { subscribeAuth } from "./features/auth/authState.js";
+
+import {
     loadTrack,
     playTrack
 } from "./features/player/player.js";
 
 import {
-    getCurrentUser
+    getCurrentUser,
+    logout
 } from "./features/auth/auth.js";
 
 import {
@@ -19,13 +26,27 @@ import {
     initRouter
 } from "./core/router.js";
 
+import { openAuthModal } from "./components/modals/authModal.js";
+
 
 initPlayer();
 initRouter();
 
+function updateUserMenu() {
+    document.querySelector(".user-menu").innerHTML =
+        renderUserMenu();
+}
+
+updateUserMenu();
+
+subscribeAuth(() => {
+    updateUserMenu();
+});
+
 console.log(
     getCurrentUser()
 );
+
 
 document.addEventListener(
     "click",
@@ -78,3 +99,14 @@ document.addEventListener(
         }
     }
 );
+document.addEventListener("click", (e) => {
+    const loginBtn = e.target.closest(".login-btn");
+    if (loginBtn) {
+        openAuthModal("login");
+    }
+
+    const userDropdown = e.target.closest(".user-dropdown");
+    if (userDropdown) {
+        logout();
+    }
+});

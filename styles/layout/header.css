@@ -62,8 +62,9 @@
 }
 .user-menu {
     display: flex;
-    gap: 20px;
-    justify-content: right;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
 }
 .user-menu a {
     text-decoration: none;
@@ -73,4 +74,24 @@
 }
 .user-menu a:hover {
     color: white;
+}
+.user-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #333;
+}
+
+.user-name {
+    color: #ededed;
+    font-family: 'Montserrat';
+    font-size: 14px;
 }

@@ -6,6 +6,8 @@ import settingsView from "../views/settings.js";
 import notificationsView from "../views/notifications.js";
 import testTracksView from "../views/testtracks.js";
 
+
+
 const routes = {
     "/": homeView,
     "/library": libraryView,
@@ -13,7 +15,7 @@ const routes = {
     "/profile": profileView,
     "/settings": settingsView,
     "/notifications": notificationsView,
-    "/test-tracks": testTracksView
+    "/test-tracks": testTracksView,
 };
 
 

@@ -21,7 +21,7 @@ export default function libraryView() {
     if (favoriteTracks.length === 0) {
     return `
         <h1 class="page-title">Your Favorites</h1>
-        <p>No favorite tracks yet.</p>
+        <h2>No favorite tracks yet.</h2>
     `;
 }
 

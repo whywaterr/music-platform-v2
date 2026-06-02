@@ -51,30 +51,14 @@
     display: flex;
     gap: 20px;
 }
-.music-player button img {
-    width: 20px;
-    height: 20px;
-    display: block;
-    pointer-events: none;
-
-}
-.player-controls button,
-.player-volume button,
-.player-extra-controls button,
-.playlist-controls button {
+.player-controls button {
     background: none;
     border: none;
-    padding: 0;
-
-    width: 28px;
-    height: 28px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    color: white;
+    font-size: 22px;
     cursor: pointer;
 }
+
 .player-progress {
     display: flex;
     align-items: center;
@@ -116,8 +100,8 @@
     color: #aaa;
     cursor: pointer;
 }
-.player-extra-controls button:hover, .playlist-controls button:hover {
-    color: white;
+.player-extra-controls button:hover, .playlist-controls button:hover, .player-controls button:hover {
+    color: #fd1886;
 }
 .player-extra-controls button {
     background: none;
